@@ -4,7 +4,7 @@ function generateInteger(){
     const maxValue = document.querySelector(".maximum");
     let generated = document.querySelector(".generated span");
 
-    let generatedNumber = Math.floor(Math.random() * (maxValue.value - minValue.value) + minValue.value);
+    let generatedNumber = Math.floor(Math.random() * (maxValue.value - minValue.value)) + minValue.value;
 
     maxValue.value = "";
     minValue.value = "";
