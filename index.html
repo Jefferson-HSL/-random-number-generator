@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Número Aleatório</title>
+</head>
+<body>
+    <h1>Gerador de Número Aleatório</h1>
+
+    <div>
+        <label for="">Mínimo</label>
+        <input type="number" class="minimum">
+    </div>
+
+    <div>
+        <label for="">Máximo</label>
+        <input type="number" class="maximum">
+    </div>
+
+    <label class="generated">O Número gerado foi: <span></span></label>
+
+    <div class="buttons">
+        <button onclick="generateInteger()">Gerar Número Inteiro</button>
+        <button onclick="generateDecimalNumber()">Gerar Número Decimal</button>
+    </div>
+</body>
+</html>
