@@ -1,10 +1,10 @@
 
 function generateInteger(){
-    const minValue = document.querySelector(".minimum");
-    const maxValue = document.querySelector(".maximum");
-    let generated = document.querySelector(".generated span");
+    let minValue = document.querySelector(".minimum");
+    let maxValue = document.querySelector(".maximum");
 
-    let generatedNumber = Math.floor(Math.random() * (maxValue.value - minValue.value)) + minValue.value;
+    let generated = document.querySelector(".generated span");
+    let generatedNumber = Math.floor(Math.random() * (Math.floor(maxValue.value) - Math.ceil(minValue.value))) + Math.ceil(minValue.value);
 
     maxValue.value = "";
     minValue.value = "";
@@ -14,9 +14,9 @@ function generateInteger(){
 function generateDecimalNumber(){
     const minValue = document.querySelector(".minimum");
     const maxValue = document.querySelector(".maximum");
-    let generated = document.querySelector(".generated span");
 
-    let generatedNumber = Math.random() * (maxValue.value - minValue.value) + minValue.value;
+    let generated = document.querySelector(".generated span");
+    let generatedNumber = Math.random() * (Math.floor(maxValue.value) - Math.ceil(minValue.value)) + Math.ceil(minValue.value);
 
     maxValue.value = "";
     minValue.value = "";
